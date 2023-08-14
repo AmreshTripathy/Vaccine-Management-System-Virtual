@@ -38,4 +38,9 @@ public class UserController {
     public User getUserByEmail(@PathVariable(name = "emailId") String emailId) {
         return userService.getUserByEmail(emailId);
     }
+
+    @GetMapping("/message")
+    public String getMessage() {
+        return "Hi Amresh";
+    }
 }
